@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Welcome | PG Life</title>
+</head>
+<body>
+
+    <div class="s-modal" id="modal1">
+        <div class="m-content">
+            <span><h3>SignUp with PGLife</h3><i id="close" class="fas fa-times" onclick="closed()"></i></span>
+            <form>
+                <div class="field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Full name" required> 
+                </div>
+
+                <div class="field">
+                    <i class="fas fa-phone-alt"></i>
+                    <input type="text" placeholder="Phone Number"required>
+                </div>
+
+                <div class="field">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" placeholder="Email" required>
+                </div>
+
+                <div class="field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Password" required>
+                </div>
+
+                <div class="field">
+                    <i class="fas fa-university"></i>
+                    <input type="text" placeholder="College Name" required>
+                </div>
+
+                <div class="radi">
+                    <p>I'm a</p>
+                    <input type="radio" id="male" value="Male"><label for="male">Male</label>
+                    <input type="radio" id="female" value="Female"><label for="female">Female</label>
+                </div>
+
+                <div class="btn">
+                    <input type="submit" value="Create Account">
+                </div>
+
+            </form>
+
+            <footer>
+                <p>Already have an account?Login</p>
+            </footer>
+        </div>
+    </div>
+
+    <div class="l-modal" id="modal2">
+        <div class="l-content">
+            <span><h3>Login with PGLife</h3><i onclick="close2()" class="fas fa-times"></i></span>
+
+            <form>
+                <div class="field">
+                    <i class="fas fa-user"></i>
+                    <input type="email" placeholder="Email" required> 
+                </div>
+                <div class="field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Password" required>
+                </div>
+
+                <div class="btn">
+                    <input type="submit" value="Login">
+                </div>
+            </form>
+            <footer>
+                <p>Click Here to register a new account</p>
+            </footer>
+        </div>
+    </div>
+
+    <nav>
+        <a class="logo" href="index.html"><img src="./img/logo.png" alt="Image not Found"></a>
+
+        <div class="nav-btn">
+            <button class="burger" onclick="burger()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </button>
+            <div class="menu">
+                <span onclick="signin()"><i class="fas fa-user"></i>SignIn</span>
+                <span onclick="login()"><i class="fas fa-sign-in-alt"></i>LogIn</span>
+            </div>
+            
+        </div>
+    </nav>
+
+    <div class="canvas" id="canvas">
+        <div class="menu">
+            <div class="close-btn">
+                <i onclick="close3()" class="fas fa-times"></i>
+            </div>
+            <span onclick="signin()"><i class="fas fa-user"></i>SignIn</span>
+            <span onclick="login()"><i class="fas fa-sign-in-alt"></i>LogIn</span>
+        </div>
+    </div>
+
+    <main>
+        <div class="container">
+            <h1>Happiness per Sqaure Foot</h1>
+            <form>
+                <input type="text" placeholder="Enter your cities to search for PGs">
+                <i class="fas fa-search"></i>
+            </form>
+        </div>
+
+        <div class="container2">
+            <h1>Major Cities</h1>
+            <div class="pics">
+                <div class="fig">
+                    <a href="property_list.html"><img src="./img/delhi.png" alt="Delhi"></a>
+                </div>
+                <div class="fig">
+                    <a href="property_list.html"><img src="./img/hyderabad.png" alt="Hyderabad"></a>
+                </div>
+                <div class="fig">
+                    <a href="property_list.html"><img src="./img/mumbai.png" alt="Mumbai"></a>
+                </div>
+                <div class="fig">
+                    <a href="property_list.html"><img src="./img/bangalore.png" alt="Bangalore"></a>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="links">
+            <a href="property_list.html">PG in Delhi</a>
+            <a href="property_list.html">PG in Hyderabad</a>
+            <a href="property_list.html">PG in Mumbai</a>
+            <a href="property_list.html">PG in Bangalore</a>
+        </div>
+        <p>&copy; 2020 Copyright Fried Mind Corporations</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

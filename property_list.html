@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Best PGs in Mumbai | PG Life</title>
+</head>
+<body>
+    <div class="s-modal" id="modal1">
+        <div class="m-content">
+            <span><h3>SignUp with PGLife</h3><i id="close" class="fas fa-times" onclick="closed()"></i></span>
+            <form>
+                <div class="field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Full name" required> 
+                </div>
+
+                <div class="field">
+                    <i class="fas fa-phone-alt"></i>
+                    <input type="text" placeholder="Phone Number"required>
+                </div>
+
+                <div class="field">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" placeholder="Email" required>
+                </div>
+
+                <div class="field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Password" required>
+                </div>
+
+                <div class="field">
+                    <i class="fas fa-university"></i>
+                    <input type="text" placeholder="College Name" required>
+                </div>
+
+                <div class="radi">
+                    <p>I'm a</p>
+                    <input type="radio" id="male" value="Male"><label for="male">Male</label>
+                    <input type="radio" id="female" value="Female"><label for="female">Female</label>
+                </div>
+
+                <div class="btn">
+                    <input type="submit" value="Create Account">
+                </div>
+
+            </form>
+
+            <footer>
+                <p>Already have an account?Login</p>
+            </footer>
+        </div>
+    </div>
+
+    <div class="l-modal" id="modal2">
+        <div class="l-content">
+            <span><h3>Login with PGLife</h3><i onclick="close2()" class="fas fa-times"></i></span>
+
+            <form>
+                <div class="field">
+                    <i class="fas fa-user"></i>
+                    <input type="email" placeholder="Email" required> 
+                </div>
+                <div class="field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Password" required>
+                </div>
+
+                <div class="btn">
+                    <input type="submit" value="Login">
+                </div>
+            </form>
+            <footer>
+                <p>Click Here to register a new account</p>
+            </footer>
+        </div>
+    </div>
+    <nav>
+        <a class="logo" href="index.html"><img src="./img/logo.png" alt="Image not Found"></a>
+
+        <div class="nav-btn">
+            <button class="burger" onclick="burger()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </button>
+            <div class="menu">
+                <span onclick="signin()"><i class="fas fa-user"></i>SignIn</span>
+                <span onclick="login()"><i class="fas fa-sign-in-alt"></i>LogIn</span>
+            </div>
+            
+        </div>
+    </nav>
+    <div class="canvas" id="canvas">
+        <div class="menu">
+            <div class="close-btn">
+                <i onclick="close3()" class="fas fa-times"></i>
+            </div>
+            <span onclick="signin()"><i class="fas fa-user"></i>SignIn</span>
+            <span onclick="login()"><i class="fas fa-sign-in-alt"></i>LogIn</span>
+        </div>
+    </div>
+
+    <div class="breadcrumb">
+        <span><a href="index.html">Home</a></span>
+        <span>/</span>
+        <span>Mumbai</span>
+    </div>
+
+    <div class="options">
+        <span><img src="./img/filter.png" alt="Filter"><p>Filter</p></span>
+        <span><img src="./img/desc.png" alt="Desc"><p>Highest rent first</p></span>
+        <span><img src="./img/asc.png" alt="Asc"><p>Lowest rent first</p></span>
+    </div>
+
+    <div class="list">
+        
+
+        <div class="houses">
+            <div class="img">
+                <img src="./img/properties/1/1d4f0757fdb86d5f.jpg" alt="House1">
+            </div>
+            <div class="content">
+                <div class="header">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <span><i class="far fa-heart"></i><p>3 interested</p></span>
+                </div>
+                <div class="address">
+                    <h3>Navkar Paying Guest</h3>
+                    <p>44, Juhu Scheme, Juhu, Mumbai, Maharashtra 400058</p>
+                    <img src="./img/male.png" alt="male">
+                </div>
+                <div class="fees">
+                    <h3>Rs. 9500/- <span>per month</span></h3>
+                    <a href="property_detail.html"><button>View</button></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="houses">
+            <div class="img">
+                <img src="./img/properties/1/46ebbb537aa9fb0a.jpg" alt="House1">
+            </div>
+            <div class="content">
+                <div class="header">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <span><i class="far fa-heart"></i><p>6 interested</p></span>
+                </div>
+                <div class="address">
+                    <h3>Ganpati Paying Guest</h3>
+                    <p>Police Beat, Sainath Complex, Besides, SV Rd, Daulat Nagar, Borivali East, Mumbai - 400066</p>
+                    <img src="./img/male.png" alt="male">
+                    <img src="./img/female.png" alt="both">
+                </div>
+                <div class="fees">
+                    <h3>Rs. 8500/- <span>per month</span></h3>
+                    <a href="property_detail.html"><button>View</button></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="houses">
+            <div class="img">
+                <img src="./img/properties/2/6343da10f7206b0f.jpg" alt="House1">
+            </div>
+            <div class="content">
+                <div class="header">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span><i class="far fa-heart"></i><p>4 interested</p></span>
+                </div>
+                <div class="address">
+                    <h3>PG for Girls Borivali West</h3>
+                    <p>Plot no.258/D4, Gorai no.2, Borivali West, Mumbai, Maharashtra 400092</p>
+                    <img src="./img/female.png" alt="male">
+                </div>
+                <div class="fees">
+                    <h3>Rs. 8000/- <span>per month</span></h3>
+                    <a href="property_detail.html"><button>View</button></a>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <footer class="footer">
+        <div class="links">
+            <a href="#">PG in Delhi</a>
+            <a href="#">PG in Hyderabad</a>
+            <a href="#">PG in Mumbai</a>
+            <a href="#">PG in Bangalore</a>
+        </div>
+        <p>&copy; 2020 Copyright Fried Mind Corporations</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
